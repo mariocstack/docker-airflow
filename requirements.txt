@@ -73,7 +73,6 @@ yarg==0.1.9
 yarl==1.9.2
 zope.interface==6.0
 scrapyscript==1.1.5
-pyarrow==9.0.0
 html5lib==1.1
 xlrd==2.0.1
 boto3==1.26.51
