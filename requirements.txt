@@ -86,3 +86,4 @@ zope.interface==5.5.2
 webencodings==0.5.1
 boto3==1.26.51
 apache-airflow-providers-celery
+pyarrow=11.0.0
