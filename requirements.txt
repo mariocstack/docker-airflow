@@ -42,7 +42,7 @@ tldextract
 w3lib
 scrapyscript
 nltk==3.8.1
-numpy==1.23.2
+numpy>=1.23.2
 soupsieve==2.3.2.post1
 filelock==3.9.0
 click==8.1.3
