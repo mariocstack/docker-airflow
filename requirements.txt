@@ -366,4 +366,4 @@ camelot-py[base]
 ipeadatapy
 rapidfuzz
 pyxlsb
-
+PyPDF2<3.0
