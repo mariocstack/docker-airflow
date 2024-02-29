@@ -358,8 +358,7 @@ undetected_chromedriver==3.5.
 tradingeconomics==4.2.7
 nltk==3.8.1
 scikit-learn==1.3.0
-Scrapy
-scrapyscript
+Scrapy==2.9.0
 pypdf
 PyMuPDF
 tabula_py
