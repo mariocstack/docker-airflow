@@ -73,9 +73,9 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/usr/local/airflow/dags
-    - ${AIRFLOW_PROJ_DIR:-.}/logs:/usr/local/airflow/logs
-    - ${AIRFLOW_PROJ_DIR:-.}/config:/usr/local/airflow/config
-    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/usr/local/airflow/plugins
+    - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
+    - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/irflow/config
+    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
