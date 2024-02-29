@@ -362,4 +362,3 @@ Scrapy
 scrapyscript
 pypdf
 pdfminer.six
-lxml==4.9.2
