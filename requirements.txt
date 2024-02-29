@@ -362,3 +362,5 @@ Scrapy
 scrapyscript
 pypdf
 PyMuPDF
+tabula_py
+opencv-python
