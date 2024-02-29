@@ -350,7 +350,6 @@ unidecode
 openpyxl
 cloudscraper
 xlrd
-camelot-py
 eurostat
 playwright
 pdfplumber==0.10.2
@@ -363,4 +362,4 @@ scrapyscript
 pypdf
 PyMuPDF
 tabula_py
-opencv-python
+camelot-py[base]
