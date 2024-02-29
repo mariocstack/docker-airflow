@@ -246,7 +246,7 @@ opentelemetry-sdk==1.22.0
 opentelemetry-semantic-conventions==0.43b0
 ordered-set==4.1.0
 packaging==23.2
-pandas==2.1.4
+pandas==2.0.3
 pandas-gbq==0.20.0
 paramiko==3.4.0
 pathspec==0.12.1
