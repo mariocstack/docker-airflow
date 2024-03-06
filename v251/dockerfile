@@ -1,6 +1,12 @@
 FROM apache/airflow:2.5.1-python3.10
 COPY requirements.txt /
+RUN python -m pip install --upgrade pip && pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" -r /requirements.txt
 
+# echo "airflow:airflow" | chpasswd \
+# && adduser airflow sudo \
+
+RUN playwright install
+USER root
 RUN apt-get update && apt-get install -y \
 libglib2.0-0 \                    
 libnss3 \                                     
@@ -24,11 +30,3 @@ libpango-1.0-0 \
 libcairo2 \                                   
 libasound2 \   
 && rm -rf /var/lib/apt/lists/*
-
-RUN python -m pip install --upgrade pip && pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" -r /requirements.txt
-
-# echo "airflow:airflow" | chpasswd \
-# && adduser airflow sudo \
-
-RUN playwright install
-# RUN playwright install-deps
