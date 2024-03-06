@@ -63,6 +63,9 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     AIRFLOW__CORE__ENABLE_XCOM_PICKLING: 'true'
     AIRFLOW__CORE__DAGS_FOLDER: '/usr/local/airflow/dags'
+    AIRFLOW__WEBSERVER__WORKER_CLASS: 'gevent'
+    _AIRFLOW_PATCH_GEVENT: '1'
+
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/usr/local/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
