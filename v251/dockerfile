@@ -2,7 +2,7 @@ FROM apache/airflow:2.5.1-python3.10
 COPY requirements.txt /
 RUN python -m pip install --upgrade pip && pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" -r /requirements.txt
 
-RUN pip install pytest-playwright && playwright install 
+RUN pip install pytest-playwright && sudo playwright install 
 
 USER root
 RUN sudo apt update && sudo apt install default-jre -y
