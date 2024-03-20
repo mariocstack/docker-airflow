@@ -6,7 +6,7 @@ RUN python -m pip install --upgrade pip && pip install --no-cache-dir "apache-ai
 # && adduser airflow sudo \
 
 USER root
-RUN playwright install && playwright install-deps
+RUN playwright install && playwright install-deps 
 RUN apt-get update && apt-get install default-jre -y
 
 # RUN apt-get update && apt-get install -y \
