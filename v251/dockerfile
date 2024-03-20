@@ -6,6 +6,6 @@ RUN pip install pytest-playwright && playwright install
 
 USER root
 RUN sudo apt update && sudo apt install default-jre -y
-RUN playwright install-deps
+RUN sudo playwright install-deps
 
 
