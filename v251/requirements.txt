@@ -346,3 +346,4 @@ rapidfuzz
 pyxlsb
 PyPDF2<3.0
 html5lib
+tabula-py[jpype]
